@@ -617,7 +617,7 @@ button {
 /* contact section css start */
 
 .contact_section {
-  padding: 100px;
+  padding: 100px 0px;
   background-color: var(--heading-text-color);
   background-image: url(../assets/asset\ 21.png);
   background-repeat: no-repeat;
@@ -714,7 +714,6 @@ button {
 
 
 /* footer section css start */
-
 
 .footer_section {
   padding: 10px 0px;
