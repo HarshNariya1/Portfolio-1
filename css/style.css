@@ -279,15 +279,20 @@ button {
   font-size: 20px;
 }
 
-.srt_btn a {
-  background: #FF651C;
-  color: #fff;
-  box-shadow: 6px 6px 0 -1px var(--heading-text-color);
+.srt_btn {
+  background: var(--theme-hover);
+  color: var(--white);
   padding: 8px 20px;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 2px;
   transition: ease-in-out 0.35s;
+  box-shadow: 6px 6px 0 -1px var(--heading-text-color);
+}
+
+.srt_btn:hover {
+  background: var(--heading-text-color);
+  box-shadow: 5px 5px 0 -2px var(--theme-hover);
 }
 
 .company_slider {
