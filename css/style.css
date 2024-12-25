@@ -467,7 +467,6 @@ button {
   text-transform: uppercase;
   transition: ease-in-out 0.35s;
   background: var(--theme-color);
-  color: var(--heading-text-color);
   box-shadow: 6px 6px 0 -1px var(--theme-hover);
 }
 
@@ -485,7 +484,6 @@ button {
 .port_section {
   padding: 100px 0px;
   background: #fec4481a;
-  ;
 }
 
 .port_heading h3 {
