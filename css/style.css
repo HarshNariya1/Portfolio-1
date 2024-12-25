@@ -1,0 +1,723 @@
+/* jost-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/jost-v18-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/jost-v18-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/jost-v18-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/jost-v18-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/jost-v18-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-800 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/jost-v18-latin-800.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jost-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/jost-v18-latin-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------- default css start-------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --theme-color: #fec448;
+  --white: #fff;
+  --theme-hover: #ff651c;
+  --jost: 'jost';
+  --heading-text-color: #373737;
+  /* --sec-color: #ff651c; */
+}
+
+.container {
+  max-width: 1230px;
+}
+
+.spacer {
+  padding: 80px 0px;
+  background-color: var(--sec-color);
+}
+
+body {
+  font-family: var(--jost);
+  font-weight: 400;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--jost);
+  font-weight: 600;
+  color: var(--heading-text-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: 0px;
+  background: transparent;
+}
+
+.bg_sec {
+  background-color: var(--sec-color);
+}
+
+.bg_dark {
+  background-color: var(--theme-color);
+  color: var(--white);
+}
+
+.section_heading {
+  padding-bottom: 60px;
+}
+
+/* ---------------------------------------------- default css end -------------------------------------------- */
+
+
+/* header css start */
+
+.main_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  background: transparent;
+}
+
+.toggle_btn {
+  /* padding: 25px 15px; */
+  color: rgb(0, 0, 0);
+  display: none;
+  position: relative;
+}
+
+.mob_main_menu {
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-family: var(--jost);
+  display: none;
+  right: 0;
+  top: 60px;
+  position: absolute;
+  border: 2px solid black;
+}
+
+.mob_main_menu li {
+  color: var(--heading-text-color);
+  padding-top: 8px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.navbar_nav {
+  font-size: 14px;
+}
+
+.nav_link {
+  padding-bottom: 10px !important;
+  letter-spacing: 3px;
+  color: var(--heading-text-color);
+  position: relative;
+}
+
+.nav_item:hover .nav_link {
+  color: var(--theme-hover);
+}
+
+.nav_link:hover:after {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.nav_link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background: var(--theme-hover);
+  transition: ease-in-out 0.35s;
+}
+
+.cnt_btn1 {
+  background: var(--theme-hover);
+  color: var(--white);
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  transition: ease-in-out 0.35s;
+  box-shadow: 6px 6px 0 -1px var(--heading-text-color);
+}
+
+.cnt_btn1:hover {
+  background: var(--heading-text-color);
+  box-shadow: 5px 5px 0 -2px var(--theme-hover);
+}
+
+/* header css end */
+
+
+/* home section css start */
+
+.exp_section {
+  padding: 100px 0px;
+}
+
+.home_section {
+  position: relative;
+  overflow: hidden;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-color: #fec4481a;
+}
+
+.my_intro h6 {
+  color: var(--heading-text-color);
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.my_intro h1 {
+  font-size: 70px;
+  color: var(--heading-text-color);
+  /* margin: 0 0 35px; */
+  line-height: 1;
+}
+
+.my_intro p {
+  font-size: 20px;
+}
+
+.srt_btn a {
+  background: #FF651C;
+  color: #fff;
+  box-shadow: 6px 6px 0 -1px var(--heading-text-color);
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  transition: ease-in-out 0.35s;
+}
+
+.company_slider {
+  background-color: var(--heading-text-color);
+}
+
+/* home section css end */
+
+
+/* services section css start */
+
+.services_section {
+  background-image: url(../assets/asset\ 20.png);
+  padding: 100px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ser_heading h3 {
+  font-size: 50px;
+  color: var(--heading-text-color);
+  letter-spacing: 4px;
+}
+
+.service_box {
+  padding: 40px;
+  border: 2px solid var(--heading-text-color);
+  transition: ease-in-out 0.35s;
+  display: flex;
+}
+
+.service_box:hover {
+  box-shadow: 5px 5px 0 0 var(--heading-text-color);
+}
+
+.service_bg1 {
+  background: #9BD3D0;
+}
+
+.service_bg2 {
+  background: #FEC447;
+}
+
+.service_bg3 {
+  background: #FECCB5;
+}
+
+.service_bg4 {
+  background: #92B5FF;
+}
+
+.service_bg5 {
+  background: #C4D39B;
+}
+
+.service_bg6 {
+  background: #D2CEFF;
+}
+
+.service_icon {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  color: var(--heading-text-color);
+  border: 2px solid var(--heading-text-color);
+}
+
+.service_content {
+  width: 438px;
+  padding-left: 20px;
+}
+
+.service_content h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service_content p {
+  font-size: 17px;
+}
+
+/* services section css end */
+
+
+/* skill section css start */
+
+.expe_section {
+  padding: 100px 0px;
+}
+
+.ski_heading h3 {
+  font-size: 50px;
+  color: var(--heading-text-color);
+  letter-spacing: 4px;
+}
+
+.skill_box {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--heading-text-color);
+  transition: ease-in-out 0.35s;
+}
+
+.skill_box:hover {
+  box-shadow: 3px 3px 0 0 var(--heading-text-color);
+}
+
+.skill_bg1 {
+  background: #9BD3D0;
+}
+
+.skill_bg2 {
+  background: #FEC447;
+}
+
+.skill_bg3 {
+  background: #FECCB5;
+}
+
+.skill_bg4 {
+  background: #92B5FF;
+}
+
+.skill_bg5 {
+  background: #C4D39B;
+}
+
+.skill_bg6 {
+  background: #D2CEFF;
+}
+
+.skill_box h3 {
+  color: var(--heading-text-color);
+  margin: 0;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.skill_icon {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  color: var(--heading-text-color);
+  border: 2px solid var(--heading-text-color);
+}
+
+.work_contact {
+  background-color: var(--heading-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.work_title {
+  font-size: 40px;
+}
+
+.cnt_btn2 {
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: ease-in-out 0.35s;
+  background: var(--theme-color);
+  color: var(--heading-text-color);
+  box-shadow: 6px 6px 0 -1px var(--theme-hover);
+}
+
+.cnt_btn2:hover {
+  color: var(--white);
+  background: var(--theme-hover);
+  box-shadow: 5px 5px 0 -2px var(--theme-color);
+}
+
+/* skill section css end  */
+
+
+/* portfolio section css start */
+
+.port_section {
+  padding: 100px 0px;
+  background: #fec4481a;
+  ;
+}
+
+.port_heading h3 {
+  font-size: 50px;
+  color: var(--heading-text-color);
+  letter-spacing: 4px;
+}
+
+.portfolio_img {
+  position: relative;
+  border: 2px solid var(--heading-text-color);
+  transition: ease-in-out 0.35s;
+}
+
+.portfolio_img:hover {
+  box-shadow: 3px 3px 0 0 var(--heading-text-color);
+}
+
+.portfolio_img a {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  color: var(--heading-text-color);
+  background: var(--white);
+  border: 2px solid var(--heading-text-color);
+  transition: ease-in-out 0.35s;
+  top: 15px;
+  left: 0px;
+  opacity: 0;
+}
+
+.portfolio_img:hover a {
+  left: 15px;
+  opacity: 1;
+}
+
+.portfolio_detail h6 {
+  padding: 8px 20px;
+  font-size: 12px;
+  color: var(--heading-text-color);
+  background: #ff651c33;
+  letter-spacing: 3px;
+  border-radius: 30px;
+}
+
+.portfolio_detail h4 {
+  font-size: 32px;
+}
+
+.view_btn {
+  background: var(--theme-hover);
+  color: var(--white);
+  padding: 8px 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  transition: ease-in-out 0.35s;
+  box-shadow: 6px 6px 0 -1px var(--heading-text-color);
+}
+
+.view_btn:hover {
+  background: var(--heading-text-color);
+  box-shadow: 5px 5px 0 -2px var(--theme-hover);
+}
+
+.testi_section {
+  padding: 100px 0px;
+}
+
+.testi_heading h3 {
+  font-size: 50px;
+  color: var(--heading-text-color);
+  letter-spacing: 4px;
+}
+
+.testimonial_text {
+  color: var(--heading-text-color);
+}
+
+.img_holder {
+  max-width: 100px;
+  height: 94.85px;
+  border: 2px solid var(--heading-text-color);
+}
+
+.testi_holder {
+  margin-bottom: 30px;
+  transition: ease-in-out 0.35s;
+}
+
+.testi_holder:hover {
+  box-shadow: 3px 3px 0 0 var(--heading-text-color);
+}
+
+.testi_holder_box {
+  border: 2px solid var(--heading-text-color);
+  padding: 35px;
+}
+
+.testi_detail {
+  padding-left: 20px;
+  position: relative;
+}
+
+.testi_detail p {
+  font-size: 17px;
+}
+
+.testi_detail h4 {
+  font-size: 16px;
+}
+
+.testi_detail span {
+  font-size: 14px;
+}
+
+.icon_holder {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* margin: auto; */
+  color: var(--heading-text-color);
+  font-size: 83px;
+  line-height: 1;
+  opacity: 0.1;
+}
+
+/* portfolio section css end */
+
+
+/* contact section css start */
+
+.contact_section {
+  padding: 100px;
+  background-color: var(--heading-text-color);
+  background-image: url(../assets/asset\ 21.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact_form {
+  background: var(--white);
+  padding: 35px;
+  border: 2px solid var(--heading-text-color);
+}
+
+.contact_form h2 {
+  font-size: 32px;
+  color: var(--heading-text-color);
+}
+
+.contact_form p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.form_input {
+  color: var(--heading-text-color);
+}
+
+.form-control {
+  border-radius: 0px;
+  border: 1px solid var(--heading-text-color);
+  padding: 9px 12px;
+}
+
+.send_btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: ease-in-out 0.35s;
+  background: var(--theme-color);
+  color: var(--heading-text-color);
+  box-shadow: 6px 6px 0 -1px var(--theme-hover);
+}
+
+.send_btn:hover {
+  color: var(--white);
+  background: var(--theme-hover);
+  box-shadow: 5px 5px 0 -2px var(--theme-color);
+}
+
+.contact_info {
+  color: var(--white);
+}
+
+.cont_detail {
+  padding-bottom: 35px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+}
+
+.icon_bg1 {
+  background: #9BD3D0;
+  color: var(--heading-text-color);
+  font-size: 25px;
+}
+
+.icon_bg2 {
+  background: #FEC447;
+  color: var(--heading-text-color);
+  font-size: 25px;
+}
+
+.icon_bg3 {
+  background: #FECCB5;
+  color: var(--heading-text-color);
+  font-size: 25px;
+}
+
+.icon_detail h5 {
+  color: var(--white);
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.icon_detail p {
+  font-size: 20px;
+}
+
+/* contact section css end */
+
+
+/* footer section css start */
+
+
+.footer_section {
+  padding: 10px 0px;
+  background-color: var(--heading-text-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* footer section css end */
