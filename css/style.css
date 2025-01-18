@@ -269,7 +269,7 @@ button {
 }
 
 .my_intro h1 {
-  font-size: 65px;
+  font-size: 60px;
   color: var(--heading-text-color);
   /* margin: 0 0 35px; */
   line-height: 1;
